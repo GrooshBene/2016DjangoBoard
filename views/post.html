@@ -20,7 +20,8 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/w/random">랜덤문서</a></li>
             <li><a href="/w/recent">최근변경</a></li>
-            <li><a class="dropdown-button" href="#" data-beloworigin="true" data-activates="dropdown1"><i class="material-icons">perm_identity</i></a></li>
+            <li><a class="dropdown-button" href="#" data-beloworigin="true" data-activates="dropdown1"><i
+                    class="material-icons">perm_identity</i></a></li>
             <ul id='dropdown1' class='dropdown-content'>
                 <!--<li><a href="/auth/facebook">로그인</a></li>-->
                 <li><a href="/auth/logout">로그아웃</a></li>
@@ -48,8 +49,9 @@
         <div class="row">
             <div class="col s12">
                 <div class="card-panel white">
-                    <h3 id="post-title"style="display: inline-block; float:left;"></h3>
-                    <h5 style="float:right; height:48px; line-height : 48px; margin-top:22px;"><a href="/w/제목/edit">편집</a></h5>
+                    <h3 class="post-title" style="display: inline-block; float:left;"></h3>
+                    <h5 style="float:right; height:48px; line-height : 48px; margin-top:22px;"><a
+                            href="/w/제목/edit">편집</a></h5>
                     <div id="post-content" class="flow-text" style="margin-top : 100px;">
 
                     </div>
@@ -73,18 +75,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <script src="../public/javascripts/main.js"></script>
 <script>
-$.ajax({
- url : location.href,
- dataType : 'json',
- type : 'POST',
- data : {'url' : location.href },
- success : function (data) {
-   //inner html
-     console.log(data);
-   document.getElementById("post-content").innerHTML = data.rare_content;
-   document.getElementById("post-title").innerHTML= data.title;
- }
-});
+    $.ajax({
+        url: location.href,
+        dataType: 'json',
+        type: 'POST',
+        data: {'url': location.href},
+        success: function (data) {
+            //inner html
+            console.log(data);
+            document.getElementById("post-content").innerHTML = data.rare_content;
+            document.getElementById("post-title").innerHTML = data.title;
+            console.log(data);
+            document.getElementsByClassName("post-content").innerHTML(data.content);
+            document.getElementsByClassName("post-title").innerHTML(data.title);
+        }
+    });
 </script>
 </body>
 </html>
