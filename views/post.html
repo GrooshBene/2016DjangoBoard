@@ -50,7 +50,7 @@
                 <div class="card-panel white">
                     <h3 id="post-title"style="display: inline-block; float:left;"></h3>
                     <h5 style="float:right; height:48px; line-height : 48px; margin-top:22px;"><a href="/w/제목/edit">편집</a></h5>
-                    <div class="post-content flow-text" style="margin-top : 100px;">
+                    <div id="post-content" class="flow-text" style="margin-top : 100px;">
 
                     </div>
                 </div>
@@ -76,12 +76,13 @@
 $.ajax({
  url : location.href,
  dataType : 'json',
- type : 'GET',
+ type : 'POST',
  data : {'url' : location.href },
- succees : function (data) {
+ success : function (data) {
    //inner html
-   document.getElementsByClassName("post-content").innerHTML(data.content);
-   document.getElementsByClassName("post-title").innerHTML(data.title);
+     console.log(data);
+   document.getElementById("post-content").innerHTML = data.rare_content;
+   document.getElementById("post-title").innerHTML= data.title;
  }
 });
 </script>

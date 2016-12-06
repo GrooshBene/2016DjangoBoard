@@ -70,6 +70,10 @@ function init(app, Article, randomString, path) {
         });
     });
 
+    app.get('/w/write' ,function (req, res) {
+        res.sendFile(200, "");
+    })
+
     app.post('/w/new', function (req, res) {
         if(req.user == null){
             res.redirect("http://localhost:7070/auth/facebook");
