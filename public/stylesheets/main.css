@@ -1,0 +1,17 @@
+.post-content{
+    font-size: 18px;
+}
+
+.card-panel{
+    margin-top: 20px;
+}
+@media only screen and (max-device-width: 480px) {
+    .card-panel{
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    main > .container{
+        width: 100% !important;
+    }
+}

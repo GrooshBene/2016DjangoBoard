@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>북딱위키</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
+    <link rel="stylesheet" href="../public/stylesheets/init.css">
+</head>
+<body>
+<nav class="light-blue" role="navigation">
+    <div class="nav-wrapper container">
+        <a href="main.html" class="brand-logo">북딱위키</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/random">랜덤문서</a></li>
+            <li><a href="recent.html">최근변경</a></li>
+            <li><a class="dropdown-button" href="#" data-beloworigin="true" data-activates="dropdown1"><i class="material-icons">perm_identity</i></a></li>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="signin.html">회원가입</a></li>
+                <li class="divider"></li>
+                <li class="setting"><a href="setting.html">설정</a></li>
+                <li class="setting"><a href="#" class="background-kuro">어두운 화면</a></li>
+            </ul>
+        </ul>
+        <ul class="side-nav right" id="mobile-demo">
+            <li><a href="/random">랜덤문서</a></li>
+            <li><a href="recent.html">최근변경</a></li>
+            <li class="divider"></li>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="signin.html">회원가입</a></li>
+            <li class="divider"></li>
+            <li><a href="setting.html">설정</a></li>
+            <li><a href="#" class="background-kuro">어두운 화면</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel white" style="height: 400px !important;">
+                    <h3>로그인에 문제가 있으신가요?</h3>
+                    <h5 style="color: #4db6ac">무슨 문제이신가요?</h5>
+                    <div class="collection" style="margin-top: 30px;">
+                        <a href="find_id.html" class="collection-item">아이디를 모르겠습니다</a>
+                        <a href="find_pw.html" class="collection-item">비밀번호를 모르겠습니다</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="../public/javascripts/main.js"></script>
+</body>
+</html>

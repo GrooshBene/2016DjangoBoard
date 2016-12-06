@@ -1,0 +1,10 @@
+/* list */
+.list{
+    list-style-type: disc !important;
+}
+.list .number{
+    list-style-type: decimal !important;
+}
+.list .bullet{
+    list-style-type: disc !important;
+}

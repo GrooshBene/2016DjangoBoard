@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>비밀번호 찾기</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
+    <link rel="stylesheet" href="../public/stylesheets/init.css">
+</head>
+<body>
+<nav class="light-blue" role="navigation">
+    <div class="nav-wrapper container">
+        <a href="main.html" class="brand-logo">북딱위키</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/random">랜덤문서</a></li>
+            <li><a href="recent.html">최근변경</a></li>
+            <li><a class="dropdown-button" href="#" data-beloworigin="true" data-activates="dropdown1"><i class="material-icons">perm_identity</i></a></li>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="signin.html">회원가입</a></li>
+                <li class="divider"></li>
+                <li class="setting"><a href="setting.html">설정</a></li>
+                <li class="setting"><a href="#" class="background-kuro">어두운 화면</a></li>
+            </ul>
+        </ul>
+        <ul class="side-nav right" id="mobile-demo">
+            <li><a href="/random">랜덤문서</a></li>
+            <li><a href="recent.html">최근변경</a></li>
+            <li class="divider"></li>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="signin.html">회원가입</a></li>
+            <li class="divider"></li>
+            <li><a href="setting.html">설정</a></li>
+            <li><a href="#" class="background-kuro">어두운 화면</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel white" style="height: 250px !important;">
+                    <form action="/login" method="POST">
+                        <div class="input-field col s12">
+                            <input placeholder="이메일 입력" id="email" type="email" name="email" class="validate" required>
+                            <label for="email">email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="아이디 입력" id="id" type="text" name ="id" class="validate" required>
+                            <label for="id">id</label>
+                        </div>
+                        <div class="col s12">
+                            <button class="btn waves-effect waves-light light-blue" type="submit" name="action">비밀번호 찾기</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="../public/javascripts/main.js"></script>
+</body>
+</html>

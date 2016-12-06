@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="theme-color" content="#5a5c7e">
+    <title>북딱위키</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
+    <link rel="stylesheet" href="../public/stylesheets/init.css">
+    <link rel="stylesheet" href="../public/stylesheets/wiki.css">
+</head>
+<body>
+<!--nav-->
+<nav class="light-blue" role="navigation">
+    <div class="nav-wrapper container">
+        <a href="/" class="brand-logo">북딱위키</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/w/random">랜덤문서</a></li>
+            <li><a href="/w/recent">최근변경</a></li>
+            <li><a class="dropdown-button" href="#" data-beloworigin="true" data-activates="dropdown1"><i class="material-icons">perm_identity</i></a></li>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="/auth/logout">로그아웃</a></li>
+                <li class="divider"></li>
+                <li class="setting"><a href="/auth/setting">설정</a></li>
+                <li class="setting"><a href="#" class="background-kuro">어두운 화면</a></li>
+            </ul>
+        </ul>
+        <ul class="side-nav right" id="mobile-demo">
+            <li><a href="/w/random">랜덤문서</a></li>
+            <li><a href="/w/recent">최근변경</a></li>
+            <li class="divider"></li>
+            <li><a href="/">로그인</a></li>
+            <li><a href="/">회원가입</a></li>
+            <li class="divider"></li>
+            <li><a href="/auth/setting">설정</a></li>
+            <li><a href="#" class="background-kuro">어두운 화면</a></li>
+        </ul>
+    </div>
+</nav>
+<!--main-->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel white">
+                        <h3 >북딱위키 대문</h3>
+                        <span class="post-content flow-text">
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <span class="white-text center-align">
+                    북딱위키 우리 모두의 위키
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="../public/javascripts/main.js"></script>
+</body>
+</html>
