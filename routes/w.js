@@ -40,7 +40,7 @@ function init(app, Article, randomString, path) {
                 throw err;
             }
             console.log("Article : "+ req.param('title') + " Has Been Changed");
-            res.send(200);
+            res.redirect(200, "http://localhost:7070/w/" + req.param('title'));
         });
     });
 
@@ -54,7 +54,7 @@ function init(app, Article, randomString, path) {
         // }
     })
 
-    app.post('/w/write', function (req, res) {
+    app.post('/w/:title/write', function (req, res) {
         var article = new Article({
             _id : randomString.generate(14),
             title : req.param('title'),
@@ -70,8 +70,8 @@ function init(app, Article, randomString, path) {
         });
     });
 
-    app.get('/w/write' ,function (req, res) {
-        res.sendFile(200, "");
+    app.get('/w/:title/write' ,function (req, res) {
+        res.sendFile(path.resolve('views/edit.html'));
     })
 
     app.post('/w/new', function (req, res) {
