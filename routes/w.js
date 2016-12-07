@@ -40,7 +40,7 @@ function init(app, Article, randomString, path) {
                 throw err;
             }
             console.log("Article : "+ req.param('title') + " Has Been Changed");
-            res.redirect(200, "http://localhost:7070/w/" + req.param('title'));
+            res.redirect("http://localhost:7070/w/" + req.param('title'));
         });
     });
 

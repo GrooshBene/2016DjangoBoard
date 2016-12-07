@@ -49,15 +49,15 @@
                 <div class="card-panel white" style="height: 800px !important;">
                     <h3 style="float: left;">북딱위키 대문</h3>
                     <h3 style="float: right; color: #a0a0a0">편집</h3>
-                    <form class="col s12" method="POST" action="./edit" id="edit-form">
+                    <form class="col s12" method="POST" id="edit-form" accept-charset="UTF-8">
                         <div class="input-field col s12">
-                            <input type="text" id="textarea1" class="materialize-textarea flow-text" form="edit-form" name="content"></input>
+                            <textarea id="textarea1" class="materialize-textarea flow-text" form="edit-form" name="content"></textarea>
                             <label for="textarea1">Textarea</label>
                         </div>
-                        <button class="btn waves-effect waves-light light-blue" type="submit" name="action">편집 올리기
+                        <button class="btn waves-effect waves-light light-blue" type="submit" onclick="submit();">편집 올리기
                             <i class="material-icons right">send</i>
                         </button>
-                        <button class="btn waves-effect waves-light red" type="button" name="action">취소</button>
+                        <button class="btn waves-effect waves-light red" type="button" form="edit-form" name="action">취소</button>
                     </form>
                 </div>
             </div>
@@ -78,5 +78,11 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <script src="../public/javascripts/main.js"></script>
+<script>
+    var submit = function(){
+        document.getElementById("edit-form").action = location.href;
+        document.getElementById("edit-form").submit();
+    };
+</script>
 </body>
 </html>

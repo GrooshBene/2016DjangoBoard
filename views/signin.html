@@ -44,6 +44,7 @@
         <div class="row">
             <div class="col s12">
                 <div class="card-panel white" style="height: 350px !important;">
+                  <form method="POST" action="" id="signin-form" accept-charset="UTF-8">
                     <div class="input-field col s12">
                         <input placeholder="아이디 입력" id="id" type="text" class="validate">
                         <label for="id">id</label>
@@ -57,10 +58,11 @@
                         <label for="email">email</label>
                     </div>
                     <div class="col s12">
-                        <button class="btn waves-effect waves-light light-blue" type="submit" name="action">회원가입
+                        <button class="btn waves-effect waves-light light-blue" type="submit" form="signin-form" name="action">회원가입
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
+                  </form>
                 </div>
             </div>
         </div>
