@@ -51,13 +51,13 @@
                     <h3 style="float: right; color: #a0a0a0">편집</h3>
                     <form class="col s12" method="POST" action="./" id="edit-form">
                         <div class="input-field col s12">
-                            <textarea id="textarea1" class="materialize-textarea flow-text" form="edit-form"></textarea>
+                            <textarea id="textarea1" class="materialize-textarea flow-text" form="edit-form" name="content"></textarea>
                             <label for="textarea1">Textarea</label>
                         </div>
-                        <button class="btn waves-effect waves-light light-blue" type="submit" name="action">편집 올리기
+                        <button class="btn waves-effect waves-light light-blue" type="submit">편집 올리기
                             <i class="material-icons right">send</i>
                         </button>
-                        <button class="btn waves-effect waves-light red" type="button" name="action">취소</button>
+                        <button class="btn waves-effect waves-light red" type="button" form="edit-form" name="action">취소</button>
                     </form>
                 </div>
             </div>
